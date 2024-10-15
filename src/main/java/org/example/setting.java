@@ -31,8 +31,14 @@ public class setting {
         System.out.println("App launched successfully!");
     }
     @Test
-    public void sampleTest() {
-        System.out.println("App sampleTest successfully!");
+    public void sampleTest() throws InterruptedException {
+        driver.findElement(By.xpath("//android.widget.Button[@resource-id='com.google.android.apps.tasks:id/welcome_sign_in']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//android.view.View[@resource-id='yDmH0d']/android.view.View[4]/android.view.View/android.view.View[1]/android.view.View[3]")).click();
+        driver.findElement(By.xpath("//android.widget.EditText[@resource-id='identifierId']")).sendKeys("asdf@gmail.com");
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//android.widget.Button[@text='Next']")).click();
+        Thread.sleep(3000);
     }
 
     @After
