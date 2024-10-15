@@ -30,7 +30,6 @@
             <artifactId>java-client</artifactId>
             <version>8.5.1</version> <!-- Use the latest stable version -->
         </dependency>
-
     </dependencies>
 
     <properties>
